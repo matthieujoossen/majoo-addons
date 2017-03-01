@@ -1,0 +1,2 @@
+id,name,active,sale_ok,donation,type,categ_id:id,property_account_income_id:id,property_account_expense_id:id
+product_template_donation,Don,1,0,1,service,donation.donation_product_category,,

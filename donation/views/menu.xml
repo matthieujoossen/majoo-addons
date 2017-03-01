@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data noupdate="0">
+
+    <menuitem id="donation_top_menu" sequence="30" name="Donations" groups="group_donation_viewer"/>
+
+    <!-- donations menus -->
+    <menuitem id="donation_title_menu" parent="donation_top_menu" sequence="15" name="Donations"/>
+    <menuitem id="donation_menu" action="donation_action" parent="donation_title_menu" sequence="10"/>
+    <menuitem id="donor" action="base.action_partner_form" parent="donation_title_menu" sequence="50" name="Donors"/>
+
+    <!-- report menus -->
+    <menuitem id="donation_report_title_menu" parent="donation.donation_top_menu" name="Report" sequence="20"/>
+    <menuitem id="donation_report_menu" action="donation_report_action" parent="donation_report_title_menu" sequence="10"/>
+
+    <!-- config menus -->
+    <menuitem id="donation_config_menu" parent="donation_top_menu"  name="Configuration" sequence="30"
+              groups="donation.group_donation_manager"/>
+    <menuitem id="donation_campaign_menu" action="donation_campaign_action" parent="donation_config_menu" sequence="30"/>
+    <menuitem id="donation_products" action="donation_product_action" parent="donation_config_menu"/>
+
+  </data>
+</odoo>
