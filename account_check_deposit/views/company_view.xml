@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+  <data>
+
+    <record id="view_company_form" model="ir.ui.view">
+      <field name="name">check.deposit.company.form</field>
+      <field name="model">res.company</field>
+      <field name="inherit_id" ref="base.view_company_form"/>
+      <field name="arch" type="xml">
+        <field name="currency_id" position="after">
+          <field name="check_deposit_account_id"/>
+        </field>
+      </field>
+    </record>
+
+  </data>
+</odoo>
