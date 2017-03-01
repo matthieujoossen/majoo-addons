@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data noupdate="0">
+
+    <template id="layout" inherit_id="report.assets_common">
+      <xpath expr="." position="inside">
+        <style type="text/css">
+          <t t-call="meeting.style"/>
+        </style>
+      </xpath>
+    </template>
+
+    <template id="style">
+      p, li {
+      font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif;
+      }
+
+      h1.meeting_report {
+      font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif;
+      color: #E95420;
+      text-align: center;
+      }
+
+      ul.meeting_report {
+      padding-left: 50px;
+      }
+
+      p.meeting_tagline {
+      font-style: italic;
+      text-align: center;
+      font-size: 150%;
+      color: #AEA79F;
+      }
+
+      span.agenda_line {
+      padding-left: 50px;
+      }
+    </template>
+
+    <template id="report_meeting_document">
+      <t t-call="report.external_layout">
+        <t t-set="o" t-value="o.with_context({'lang':o.create_uid.lang})" />
+        <div class="page">
+          <t t-if="o.meeting_type_id">
+
+            <h1 class="meeting_report">Procès Verbal</h1>
+            <p class="meeting_tagline">Réunion de <t t-esc="o.meeting_type_id.name"/> du <span t-field="o.date_begin" t-field-options='{"format": "dd MMMM yyyy"}'/></p>
+
+            <div class="row mt32 mb32">
+              <p>Le <span t-field="o.date_begin" t-field-options='{"format": "dd MMMM yyyy"}'/> à <span t-field="o.date_begin" t-field-options='{"format": "HH:m"}'/>, le <span t-field="o.meeting_type_id.name"/> s'est réuni au : <span t-field="o.address"/>.</p>
+
+              <p>Étaient présents : <t t-esc="o.get_presents()"/>.<br/>
+              Président de séance : <span t-field="o.meeting_president"/>.<br/>
+              Secrétaire de séance : <span t-field="o.meeting_secretary"/>.
+              </p>
+
+              <p>Ordre du jour :<br/>
+              <t t-foreach="o.text_agenda.split('\n')" t-as="line">
+                <span t-esc="line" class="agenda_line"/><br/>
+              </t>
+              </p>
+
+              <t t-if="o.decision_ids">
+                <p>Il est acté, après délibération :
+                <ul class="meeting_report">
+                  <t t-foreach="o.decision_ids" t-as="decision">
+                    <li>à <span t-field="decision.result_vote"/> que <span t-field="decision.decision"/></li>
+                  </t>
+                </ul>
+                </p>
+              </t>
+
+              <p>L'ordre du jour étant épuisé, la séance est levée à  <span t-field="o.date_end" t-field-options='{"format": "HH:m"}'/>.</p>
+              <div class="col-xs-6"><p><span t-field="o.meeting_president"/></p></div>
+              <div class="col-xs-6"><p><span t-field="o.meeting_secretary"/></p></div>
+
+            </div>
+          </t>
+        </div>
+      </t>
+    </template>
+
+    <template id="report_meeting">
+      <t t-call="report.html_container">
+        <t t-foreach="docs" t-as="o">
+          <t t-call="meeting.report_meeting_document" t-lang="o.create_uid.lang"/>
+        </t>
+      </t>
+    </template>
+
+  </data>
+</odoo>

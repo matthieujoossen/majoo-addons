@@ -1,0 +1,358 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* meeting
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0rc1c-20161005\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-12-06 11:30+0000\n"
+"PO-Revision-Date: 2016-12-06 11:30+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: meeting
+#: model:ir.ui.view,arch_db:meeting.report_meeting_document
+msgid "s'est réuni au :"
+msgstr "s'est réuni au :"
+
+#. module: meeting
+#: model:ir.ui.view,arch_db:meeting.report_meeting_document
+msgid ", le"
+msgstr ", le"
+
+#. module: meeting
+#: model:ir.ui.view,arch_db:meeting.report_meeting_document
+msgid ".<br/>\n"
+"              Président de séance :"
+msgstr ".<br/>\n"
+"              Président de séance :"
+
+#. module: meeting
+#: model:ir.ui.view,arch_db:meeting.report_meeting_document
+msgid ".<br/>\n"
+"              Secrétaire de séance :"
+msgstr ".<br/>\n"
+"              Secrétaire de séance :"
+
+#. module: meeting
+#: model:ir.model.fields,field_description:meeting.field_meeting_meeting_address
+msgid "Address"
+msgstr "Adresse"
+
+#. module: meeting
+#: model:ir.model.fields,field_description:meeting.field_meeting_meeting_text_agenda
+#: model:ir.ui.view,arch_db:meeting.meeting_meeting_view_form
+msgid "Agenda"
+msgstr "Ordre du jour"
+
+#. module: meeting
+#: model:ir.model.fields,field_description:meeting.field_meeting_decision_attachment_ids
+#: model:ir.model.fields,field_description:meeting.field_meeting_meeting_attachment_ids
+#: model:ir.model.fields,field_description:meeting.field_meeting_type_attachment_ids
+msgid "Attachments"
+msgstr "Pièces jointes"
+
+#. module: meeting
+#: model:ir.model.fields,field_description:meeting.field_meeting_meeting_date_begin
+msgid "Begin"
+msgstr "Début"
+
+#. module: meeting
+#: sql_constraint:meeting.meeting:0
+msgid "Begin date cannot be after end date!"
+msgstr "La date de début ne peut être après la date de fin!"
+
+#. module: meeting
+#: model:ir.model.fields,field_description:meeting.field_meeting_meeting_company_id
+msgid "Company"
+msgstr "Société"
+
+#. module: meeting
+#: model:ir.model.fields,field_description:meeting.field_meeting_decision_create_uid
+#: model:ir.model.fields,field_description:meeting.field_meeting_meeting_create_uid
+#: model:ir.model.fields,field_description:meeting.field_meeting_type_create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: meeting
+#: model:ir.model.fields,field_description:meeting.field_meeting_decision_create_date
+#: model:ir.model.fields,field_description:meeting.field_meeting_meeting_create_date
+#: model:ir.model.fields,field_description:meeting.field_meeting_type_create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: meeting
+#: model:ir.model.fields,field_description:meeting.field_meeting_decision_decision
+msgid "Decision"
+msgstr "Décision"
+
+#. module: meeting
+#: model:ir.model.fields,field_description:meeting.field_meeting_meeting_decision_ids
+msgid "Decisions"
+msgstr "Décisions"
+
+#. module: meeting
+#: model:ir.model.fields,field_description:meeting.field_meeting_decision_display_name
+#: model:ir.model.fields,field_description:meeting.field_meeting_meeting_display_name
+#: model:ir.model.fields,field_description:meeting.field_meeting_type_display_name
+msgid "Display Name"
+msgstr "Afficher le nom"
+
+#. module: meeting
+#: model:ir.model.fields,field_description:meeting.field_meeting_meeting_duration
+msgid "Duration"
+msgstr "Durée"
+
+#. module: meeting
+#: model:ir.model.fields,field_description:meeting.field_meeting_meeting_date_end
+msgid "End"
+msgstr "Fin"
+
+#. module: meeting
+#: model:ir.ui.view,arch_db:meeting.meeting_meeting_view_search
+msgid "Group By"
+msgstr "Regrouper par"
+
+#. module: meeting
+#: model:ir.model.fields,field_description:meeting.field_meeting_decision_id
+#: model:ir.model.fields,field_description:meeting.field_meeting_meeting_id
+#: model:ir.model.fields,field_description:meeting.field_meeting_type_id
+msgid "ID"
+msgstr "ID"
+
+#. module: meeting
+#: model:ir.ui.view,arch_db:meeting.report_meeting_document
+msgid "Il est acté, après délibération :"
+msgstr "Il est acté, après délibération :"
+
+#. module: meeting
+#: model:ir.ui.view,arch_db:meeting.report_meeting_document
+msgid "L'ordre du jour étant épuisé, la séance est levée à"
+msgstr "L'ordre du jour étant épuisé, la séance est levée à"
+
+#. module: meeting
+#: model:ir.model.fields,field_description:meeting.field_meeting_decision___last_update
+#: model:ir.model.fields,field_description:meeting.field_meeting_meeting___last_update
+#: model:ir.model.fields,field_description:meeting.field_meeting_type___last_update
+msgid "Last Modified on"
+msgstr "Dernière Modification le"
+
+#. module: meeting
+#: model:ir.model.fields,field_description:meeting.field_meeting_decision_write_uid
+#: model:ir.model.fields,field_description:meeting.field_meeting_meeting_write_uid
+#: model:ir.model.fields,field_description:meeting.field_meeting_type_write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: meeting
+#: model:ir.model.fields,field_description:meeting.field_meeting_decision_write_date
+#: model:ir.model.fields,field_description:meeting.field_meeting_meeting_write_date
+#: model:ir.model.fields,field_description:meeting.field_meeting_type_write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: meeting
+#: model:ir.ui.view,arch_db:meeting.report_meeting_document
+msgid "Le"
+msgstr "Le"
+
+#. module: meeting
+#: model:ir.actions.report.xml,name:meeting.meeting_report
+#: model:ir.model,name:meeting.model_meeting_meeting
+#: model:ir.model.fields,field_description:meeting.field_meeting_decision_meeting_id
+#: model:ir.ui.view,arch_db:meeting.meeting_meeting_view_form
+msgid "Meeting"
+msgstr "Réunion"
+
+#. module: meeting
+#: model:ir.ui.view,arch_db:meeting.meeting_meeting_view_search
+msgid "Meeting Month"
+msgstr "Mois de réunion"
+
+#. module: meeting
+#: model:ir.model.fields,field_description:meeting.field_meeting_meeting_meeting_president
+msgid "Meeting President"
+msgstr "Président de séance"
+
+#. module: meeting
+#: model:ir.model.fields,field_description:meeting.field_meeting_meeting_meeting_secretary
+msgid "Meeting Secretary"
+msgstr "Secrétaire de séance"
+
+#. module: meeting
+#: model:ir.ui.menu,name:meeting.menu_meetings_type
+msgid "Meeting Types"
+msgstr "Types de réunion"
+
+#. module: meeting
+#: sql_constraint:meeting.decision:0
+msgid "Meeting decision must be unique per meeting"
+msgstr "Meeting decision must be unique per meeting"
+
+#. module: meeting
+#: sql_constraint:meeting.type:0
+msgid "Meeting name must be unique!"
+msgstr "Meeting name must be unique!"
+
+#. module: meeting
+#: model:ir.actions.act_window,name:meeting.action_meeting
+#: model:ir.ui.menu,name:meeting.meeting_top_menu
+#: model:ir.ui.menu,name:meeting.menu_meetings
+#: model:ir.ui.menu,name:meeting.menu_meetings_meetings
+#: model:ir.ui.view,arch_db:meeting.meeting_meeting_view_search
+#: model:ir.ui.view,arch_db:meeting.meeting_meeting_view_tree
+msgid "Meetings"
+msgstr "Réunions"
+
+#. module: meeting
+#: model:ir.actions.act_window,name:meeting.action_meeting_type
+#: model:ir.ui.view,arch_db:meeting.meeting_type_view_tree
+msgid "Meetings Type"
+msgstr "Type de réunion"
+
+#. module: meeting
+#: code:addons/meeting/models/meeting.py:50
+#, python-format
+msgid "Meting of %s"
+msgstr "Réunion du %s"
+
+#. module: meeting
+#: model:ir.ui.view,arch_db:meeting.meeting_meeting_view_form
+msgid "Minutes"
+msgstr "Procès Verbal"
+
+#. module: meeting
+#: model:ir.model.fields,field_description:meeting.field_meeting_meeting_name
+#: model:ir.model.fields,field_description:meeting.field_meeting_type_name
+msgid "Name"
+msgstr "Nom"
+
+#. module: meeting
+#: model:ir.ui.view,arch_db:meeting.report_meeting_document
+msgid "Ordre du jour :<br/>"
+msgstr "Ordre du jour :<br/>"
+
+#. module: meeting
+#: model:ir.model.fields,field_description:meeting.field_meeting_meeting_other_presents
+msgid "Other Presents"
+msgstr "Autres présents"
+
+#. module: meeting
+#: model:ir.model.fields,field_description:meeting.field_meeting_meeting_user_ids
+#: model:ir.ui.view,arch_db:meeting.meeting_meeting_view_form
+msgid "Presents"
+msgstr "Présents"
+
+#. module: meeting
+#: model:ir.ui.view,arch_db:meeting.report_meeting_document
+msgid "Procès Verbal"
+msgstr "Procès Verbal"
+
+#. module: meeting
+#: model:ir.model.fields,field_description:meeting.field_meeting_meeting_pad_report
+#: model:ir.model.fields,field_description:meeting.field_meeting_meeting_text_report
+#: model:ir.ui.view,arch_db:meeting.meeting_meeting_view_form
+msgid "Report"
+msgstr "Compte-rendu"
+
+#. module: meeting
+#: model:ir.model.fields,field_description:meeting.field_meeting_decision_result_vote
+msgid "Result Vote"
+msgstr "Résultat du vote"
+
+#. module: meeting
+#: model:ir.ui.view,arch_db:meeting.report_meeting_document
+msgid "Réunion de"
+msgstr "Réunion de"
+
+#. module: meeting
+#: model:ir.model.fields,field_description:meeting.field_meeting_meeting_meeting_type_id
+#: model:ir.ui.view,arch_db:meeting.meeting_meeting_view_search
+msgid "Type"
+msgstr "Type"
+
+#. module: meeting
+#: model:ir.ui.view,arch_db:meeting.report_meeting_document
+msgid "du"
+msgstr "du"
+
+#. module: meeting
+#: model:ir.model,name:meeting.model_meeting_decision
+msgid "meeting.decision"
+msgstr "meeting.decision"
+
+#. module: meeting
+#: model:ir.model,name:meeting.model_meeting_type
+msgid "meeting.type"
+msgstr "meeting.type"
+
+#. module: meeting
+#: model:ir.ui.view,arch_db:meeting.style
+msgid "p, li {\n"
+"      font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif;\n"
+"      }\n"
+"\n"
+"      h1.meeting_report {\n"
+"      font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif;\n"
+"      color: #E95420;\n"
+"      text-align: center;\n"
+"      }\n"
+"\n"
+"      ul.meeting_report {\n"
+"      padding-left: 50px;\n"
+"      }\n"
+"\n"
+"      p.meeting_tagline {\n"
+"      font-style: italic;\n"
+"      text-align: center;\n"
+"      font-size: 150%;\n"
+"      color: #AEA79F;\n"
+"      }\n"
+"\n"
+"      span.agenda_line {\n"
+"      padding-left: 50px;\n"
+"      }"
+msgstr "p, li {\n"
+"      font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif;\n"
+"      }\n"
+"\n"
+"      h1.meeting_report {\n"
+"      font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif;\n"
+"      color: #E95420;\n"
+"      text-align: center;\n"
+"      }\n"
+"\n"
+"      ul.meeting_report {\n"
+"      padding-left: 50px;\n"
+"      }\n"
+"\n"
+"      p.meeting_tagline {\n"
+"      font-style: italic;\n"
+"      text-align: center;\n"
+"      font-size: 150%;\n"
+"      color: #AEA79F;\n"
+"      }\n"
+"\n"
+"      span.agenda_line {\n"
+"      padding-left: 50px;\n"
+"      }"
+
+#. module: meeting
+#: model:ir.ui.view,arch_db:meeting.report_meeting_document
+msgid "que"
+msgstr "que"
+
+#. module: meeting
+#: model:ir.model.fields,help:meeting.field_meeting_decision_result_vote
+msgid "unanimity, 75%, ..."
+msgstr "l'unanimité, 75%, ..."
+
+#. module: meeting
+#: model:ir.ui.view,arch_db:meeting.report_meeting_document
+msgid "Étaient présents :"
+msgstr "Étaient présents :"

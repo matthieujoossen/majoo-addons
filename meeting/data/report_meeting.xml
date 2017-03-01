@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data noupdate="0">
+
+    <!-- report -->
+    <report
+        id="meeting_report"
+        model="meeting.meeting"
+        string="Meeting"
+        report_type="qweb-pdf"
+        name="meeting.report_meeting"
+        />
+    <record id="meeting.meeting_report" model="ir.actions.report.xml">
+      <field name="paperformat_id" ref="report.paperformat_euro"/>
+    </record>
+
+  </data>
+</odoo>
