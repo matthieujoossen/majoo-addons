@@ -22,6 +22,7 @@
 {
     'name': 'Account Check Deposit',
     'version': '1.0',
+    'sequence': 140,
     'category': 'Accounting & Finance',
     'license': 'AGPL-3',
     'summary': 'Manage deposit of checks to the bank',
@@ -45,6 +46,9 @@
         'report/report.xml',
         'report/report_checkdeposit.xml',
     ],
+    'demo': [],
+    'test': [],
     'installable': True,
     'application': True,
+    'auto_install': False,
 }
