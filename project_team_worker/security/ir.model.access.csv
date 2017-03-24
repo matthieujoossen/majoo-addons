@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_create,perm_write,perm_unlink
+project_team_user,Project Team User,project_team_worker.model_project_team_worker,base.group_user,1,1,1,0
+project_team_manager,Project Team Manager,project_team_worker.model_project_team_worker,project.group_project_manager,1,1,1,1

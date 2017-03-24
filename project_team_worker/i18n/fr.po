@@ -1,0 +1,130 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* project_team_worker
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0rc1c-20161005\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-12-13 09:30+0000\n"
+"PO-Revision-Date: 2016-12-13 09:30+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: project_team_worker
+#: code:addons/project_team_worker/models/project.py:18
+#: model:ir.model.fields,field_description:project_team_worker.field_project_team_worker_project_count
+#, python-format
+msgid "# Project"
+msgstr "Nbre. de projets"
+
+#. module: project_team_worker
+#: code:addons/project_team_worker/models/project.py:20
+#: model:ir.model.fields,field_description:project_team_worker.field_project_team_worker_active
+#, python-format
+msgid "Active"
+msgstr "Actif"
+
+#. module: project_team_worker
+#: model:ir.model.fields,field_description:project_team_worker.field_project_team_worker_attachment_ids
+msgid "Attachments"
+msgstr "Pièces jointes"
+
+#. module: project_team_worker
+#: model:ir.model.fields,field_description:project_team_worker.field_project_team_worker_create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: project_team_worker
+#: model:ir.model.fields,field_description:project_team_worker.field_project_team_worker_create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: project_team_worker
+#: model:ir.model.fields,field_description:project_team_worker.field_project_team_worker_display_name
+msgid "Display Name"
+msgstr "Afficher le nom"
+
+#. module: project_team_worker
+#: model:ir.model.fields,field_description:project_team_worker.field_project_team_worker_id
+msgid "ID"
+msgstr "ID"
+
+#. module: project_team_worker
+#: model:ir.model.fields,field_description:project_team_worker.field_project_team_worker___last_update
+msgid "Last Modified on"
+msgstr "Dernière Modification le"
+
+#. module: project_team_worker
+#: model:ir.model.fields,field_description:project_team_worker.field_project_team_worker_write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: project_team_worker
+#: model:ir.model.fields,field_description:project_team_worker.field_project_team_worker_write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: project_team_worker
+#: code:addons/project_team_worker/models/project.py:17
+#: model:ir.model.fields,field_description:project_team_worker.field_project_team_worker_name
+#, python-format
+msgid "Name"
+msgstr "Nom"
+
+#. module: project_team_worker
+#: code:addons/project_team_worker/models/project.py:23
+#: sql_constraint:project.team_worker:0
+#, python-format
+msgid "Name must be unique!"
+msgstr "Le nom doit être unique!"
+
+#. module: project_team_worker
+#: model:ir.model,name:project_team_worker.model_project_project
+msgid "Project"
+msgstr "Projet"
+
+#. module: project_team_worker
+#: model:ir.ui.view,arch_db:project_team_worker.project_team_worker_form_view
+#: model:ir.ui.view,arch_db:project_team_worker.project_team_worker_tree_view
+msgid "Project Team"
+msgstr "Équipe projet"
+
+#. module: project_team_worker
+#: model:ir.actions.act_window,name:project_team_worker.action_project_team
+#: model:ir.ui.menu,name:project_team_worker.menu_project_team
+msgid "Project Teams"
+msgstr "Équipes projets"
+
+#. module: project_team_worker
+#: code:addons/project_team_worker/models/project.py:30
+#: model:ir.ui.view,arch_db:project_team_worker.project_team_worker_form_view
+#, python-format
+msgid "Projects"
+msgstr "Projets"
+
+#. module: project_team_worker
+#: code:addons/project_team_worker/models/project.py:8
+#: model:ir.model,name:project_team_worker.model_project_team_worker
+#, python-format
+msgid "Team Worker"
+msgstr "Équipe de travail"
+
+#. module: project_team_worker
+#: code:addons/project_team_worker/models/project.py:44
+#: model:ir.model.fields,field_description:project_team_worker.field_project_project_project_team_ids
+#, python-format
+msgid "Teams"
+msgstr "Équipes"
+
+#. module: project_team_worker
+#: code:addons/project_team_worker/models/project.py:19
+#: model:ir.model.fields,field_description:project_team_worker.field_project_team_worker_user_ids
+#, python-format
+msgid "Users"
+msgstr "Utilisateurs"
+
