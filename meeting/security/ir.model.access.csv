@@ -1,4 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_create,perm_write,perm_unlink
-meeting_meeting_manager,Meeting Manager,meeting.model_meeting_meeting,hr.group_hr_manager,1,1,1,1
-meeting_decision_meeting_manager,Meeting Decision Manager,meeting.model_meeting_decision,hr.group_hr_manager,1,1,1,1
-meeting_manager_meeting_manager,Meeting Type Manager,meeting.model_meeting_type,hr.group_hr_manager,1,1,1,1
+meeting_meeting_manager,Meeting Manager,meeting.model_meeting_meeting,meeting.group_meeting_manager,1,1,1,1
+meeting_decision_meeting_manager,Meeting Decision Manager,meeting.model_meeting_decision,meeting.group_meeting_manager,1,1,1,1
+meeting_manager_meeting_manager,Meeting Type Manager,meeting.model_meeting_type,meeting.group_meeting_manager,1,1,1,1

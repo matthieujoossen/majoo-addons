@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data noupdate="0">
+
+    <record id="module_category_meeting" model="ir.module.category">
+      <field name="name">Meeting</field>
+      <field name="description">Manage meeting access</field>
+      <field name="sequence">45</field>
+    </record>
+
+    <record id="group_meeting_user" model="res.groups">
+      <field name="name">Meeting - User</field>
+      <field name="category_id" ref="module_category_meeting"/>
+      <field name="users" eval="[(4, ref('base.user_root')),
+                                (4, ref('base.group_user'))]"/>
+    </record>
+
+    <record id="group_meeting_manager" model="res.groups">
+      <field name="name">Meeting - Manager</field>
+      <field name="category_id" ref="module_category_meeting"/>
+      <field name="users" eval="[(4, ref('base.user_root'))]"/>
+    </record>
+
+  </data>
+</odoo>

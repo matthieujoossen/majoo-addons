@@ -4,12 +4,12 @@
 
     <menuitem id="meeting_top_menu" sequence="15" name="Meetings" groups="base.group_user"/>
 
-    <menuitem id="menu_meetings" name="Meetings" sequence="1" groups="hr.group_hr_manager"
+    <menuitem id="menu_meetings" name="Meetings" sequence="1" groups="meeting.group_meeting_manager"
               parent="meeting.meeting_top_menu"/>
-    <menuitem id="menu_meetings_meetings" name="Meetings" sequence="10" groups="hr.group_hr_manager"
+    <menuitem id="menu_meetings_meetings" name="Meetings" sequence="10" groups="meeting.group_meeting_manager"
               parent="meeting.menu_meetings" action="meeting.action_meeting"/>
 
-    <menuitem id="menu_meetings_config" name="Configuration" sequence="90" groups="hr.group_hr_manager"
+    <menuitem id="menu_meetings_config" name="Configuration" sequence="90" groups="meeting.group_meeting_manager"
               parent="meeting.meeting_top_menu"/>
     <menuitem id="menu_meetings_type" name="Meeting Types" sequence="10" parent="meeting.menu_meetings_config"
               action="meeting.action_meeting_type"/>

@@ -29,8 +29,10 @@
     'author': 'Matthieu JOOSSEN',
     'depends': [
         'pad',
+        'calendar',
     ],
     'data': [
+        'security/res_groups.xml',
         'security/ir.model.access.csv',
         'views/meeting_view.xml',
         'views/menu.xml',
